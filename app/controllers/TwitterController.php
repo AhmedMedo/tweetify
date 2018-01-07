@@ -9,6 +9,7 @@ class TwitterController extends \Phalcon\Mvc\Controller
     	$twitterSearch = new TwitterSearchApi();
         $twitterSearch->StartTwitterSearch('word','recent');		
 		$twitterSearch->SaveTopUsersToFireBase();
+		
     }
 
 }
